@@ -2,6 +2,8 @@ FROM openjdk:8
 
 LABEL maintainer="Marco Antonio Martins Júnior (somatorio@gmail.com)"
 
+forceerror
+
 RUN apt-get update && \
 apt-get install -y --no-install-recommends x11-xserver-utils && \
 apt-get clean && \
