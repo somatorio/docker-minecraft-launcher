@@ -1,8 +1,6 @@
 machine:
   services:
     - docker
-  timezone:
-    America/Sao_Paulo
 
 test:
   override:
@@ -12,4 +10,4 @@ deployment:
   dockerhub:
     branch: master
     commands:
-      - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/somatorio/minecraft-launcher/trigger/73b1af48-c396-4d2a-a599-834158ac9a99/
+      - curl -H "Content-Type: application/json" -X POST https://registry.hub.docker.com/u/somatorio/minecraft-launcher/trigger/73b1af48-c396-4d2a-a599-834158ac9a99/
