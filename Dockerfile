@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-MAINTAINER Marco Antonio Martins Junior <somatorio@gmail.com>
+LABEL maintainer "Marco Antonio Martins Júnior (somatorio@gmail.com)"
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends x11-xserver-utils && \
